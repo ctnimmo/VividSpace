@@ -1,6 +1,5 @@
 ﻿/.vs
 /my_ripple_experiment/node_modules
 /vivid-web/.yarn
-/vivid-web/src/components
 /vivid-web/src/pages
 /vivid-web/src/pageStates
