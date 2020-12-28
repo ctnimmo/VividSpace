@@ -1,0 +1,13 @@
+{
+  "name": "my_ripple_experiment",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "ripple-lib": "*"
+  },
+  "devDependencies": {
+    "eslint": "*"
+  }
+}
