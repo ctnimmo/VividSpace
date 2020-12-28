@@ -2,7 +2,6 @@
 /my_ripple_experiment/node_modules
 /vivid-web/.yarn
 /vivid-web/src/components
-/vivid-web/src/models
 /vivid-web/src/pages
 /vivid-web/src/pageStates
 /vivid-web/src/services
