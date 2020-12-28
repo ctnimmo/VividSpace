@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Vivid</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta 
+          name="monetization"
+          content="$twitter.xrptipbot.com/Interledger"/>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="content"></div>
+  <script src="src/index.tsx"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+function initialize() {
+    var homeLatlng = new google.maps.LatLng(51.476706,0);
+
+    var myOptions = {
+        zoom: 15,
+        center: homeLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("map_canvasyOptions"));
+
+    var infowindow =  new google.maps.InfoWindow({
+        content: 'Hello World!',
+        map: map,
+        position: homeLatlng
+    });
+}
+
+
+function sdf(){
+
+    
+
+    var icon1 = "imageA.png";
+    var icon2 = "imageB.png";
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: icon1,
+        title: "some marker"
+    });
+
+    google.maps.event.addListener(marker, 'mouseover', function() {
+        marker.setIcon(icon2);
+    });
+    google.maps.event.addListener(marker, 'mouseout', function() {
+        marker.setIcon(icon1);
+    });
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
