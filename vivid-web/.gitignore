@@ -264,6 +264,6 @@ __pycache__/
 
 
 .cache/
-dist/
+dist/*
 node_modules/
-build/
+build/*
